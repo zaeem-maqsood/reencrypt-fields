@@ -1,0 +1,8 @@
+asgiref==3.8.1
+cffi==1.16.0
+cryptography==42.0.5
+Django==4.2
+django-appconf==1.0.6
+django-cryptography==1.1
+pycparser==2.22
+sqlparse==0.5.0
