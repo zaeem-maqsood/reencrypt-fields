@@ -1,8 +1,8 @@
 from django.core.management.base import BaseCommand
-from django import apps
+from django.apps import apps
 from django.db import transaction
 
-from django_cryptography.fields import EncryptedMixin
+from reencrypt.encrypt_fields.fields import EncryptedMixin
 
 
 def re_encrypt_fields_in_model(model, field):
@@ -30,9 +30,11 @@ class Command(BaseCommand):
         Everything is in 1 transaction to rollback on any point of failure.
         """
 
+        # python manage.py shell -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+
         try:
             with transaction.atomic():
-                models = apps.apps.get_models()
+                models = apps.get_models()
                 for model in models:
                     fields = model._meta.get_fields()
                     for field in fields:

@@ -1,5 +1,5 @@
 from django.db import models
-from django_cryptography.fields import encrypt
+from reencrypt.encrypt_fields.fields import encrypt
 
 
 # Create your models here.
