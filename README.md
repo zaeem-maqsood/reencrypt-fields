@@ -37,6 +37,7 @@ you should now have your old key in the `ROTATED_KEY` and your new key in the `S
 
 ## 5. Run the management command
 
+`python manage.py re_encrypt_data`
 Run the management command and your data will now be re-encrypted with your new key.
 
 ## 6. Check your data to make sure it is readable with the new key
