@@ -2,12 +2,11 @@
 
 Builds off of the amazing work done by: https://github.com/georgemarshall/django-cryptography
 
-I wanted to make a simple way to rotate the secret key in Django but I realized all of my encrypted fields used that secret key to encrypt the data.
-So I made a simple management command that can be run to re-encrypt all the data.
+There currently isn't a way to rotate your keys safely, so I hacked the package a bit to allow us to do that. This is far from a good solution and once I have more time on my hands I will work with the original creators to get something better merged in.
 
-Check it out under books/management/commands/re_encrypt_data.py
-
-I will submit some sort of a pull request to the original makers so this can be integrated within the actual package.
+Management command is under `books/management/commands/re_encrypt_data.py`
+The project folder is under `reencrypt/reencrypt/encrypt_fields`
+Those are the only two things you need to start. Read the instructions below.
 
 ## 1. Copy the folder into your project
 
