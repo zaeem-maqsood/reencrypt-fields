@@ -1,4 +1,4 @@
-# A simple Management command rotates your Django key and re-encrypts your data.
+# Rotate your Django Keys with Django-Cryptography
 
 Builds off of the amazing work done by: https://github.com/georgemarshall/django-cryptography
 
