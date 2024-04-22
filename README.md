@@ -11,7 +11,8 @@ Those are the only two things you need to start. Read the instructions below.
 ## 1. Copy the folder into your project
 
 copy the `reencrypt/reencrypt/encrypt_fields` folder and add it to your project
-all fields that need to be encrypted need to extend from this folder now instead of the package. **You will, of course, lose the ability to update the package now as it becomes part of your code base. Again, this is a solution I needed right now**
+all fields that need to be encrypted need to extend from this folder now instead of the package. **You will, of course, lose the ability to update the package now as it becomes part of your code base. Again, this is a solution I need right now.**
+Follow progress on this issue here: [Original Issue on Package](https://github.com/georgemarshall/django-cryptography/issues/75)
 
 i.e. in my book model I have:
 `from reencrypt.encrypt_fields.fields import encrypt`
